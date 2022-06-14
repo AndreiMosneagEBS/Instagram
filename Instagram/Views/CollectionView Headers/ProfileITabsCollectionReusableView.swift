@@ -8,5 +8,13 @@
 import UIKit
 
 class ProfileITabsCollectionReusableView: UICollectionReusableView {
-        
+        static let identifier = "ProfileITabsCollectionReusableView"
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = .orange
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

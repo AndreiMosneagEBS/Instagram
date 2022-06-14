@@ -6,3 +6,61 @@
 //
 
 import Foundation
+
+enum Gender {
+    case Male, Female, Other
+}
+
+struct User {
+    let username: String
+    let bio: String
+    let name: (first: String, last: String)
+    let birthDate: Date
+    let gender: [Gender]
+    let count: UserCount
+    let joinDate: Date
+}
+
+struct UserCount{
+    let followers: Int
+    let following: Int
+    let post: Int
+    
+}
+public enum UserPostType {
+    case photo, video
+    
+}
+
+/// Represents a user post
+public struct UserPost {
+   let identifier: String
+   let postType: UserPostType
+   let thumbnailImage: URL
+   let postURL: URL   // either video url of full resolution photo
+   let caption: String?
+   let likeCount: [PostLike]
+   let comments: [PostComment]
+   let createdDate: String
+   let taggedUsers: [String]
+}
+struct PostLike {
+let username: String
+let commentIdentifier: String
+
+}
+
+struct CommentLike {
+let username: String
+let postIdentifier: String
+
+}
+
+struct PostComment {
+let username: String
+let text: String
+let createdDate: Date
+let likes: [CommentLike]
+
+}
+    
