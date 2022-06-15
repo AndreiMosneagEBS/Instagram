@@ -16,9 +16,17 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         return tableView
     }()
     
+    private let spinner: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView()
+        return spinner
+    }()
+    
+    private lazy var noNotificationView = NoNotificationsView()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Notification"
+        navigationItem.title = "Notification"
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         tableView.delegate = self
@@ -27,6 +35,17 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
+        
+    }
+    
+    private func addNoNotificationsView() {
+        tableView.isHidden = true
+        view.addSubview(tableView)
+        noNotificationView.frame = CGRect(x: 0,
+                                          y: 0,
+                                          width: view.width/2,
+                                          height: view.width/3)
+        noNotificationView.center = view.center
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

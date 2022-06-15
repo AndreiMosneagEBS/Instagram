@@ -170,11 +170,11 @@ final class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
                                  y: 5 + profilePhotoImageView.bottom,
                                  width: width-10,
                                  height: 50).integral
-        let bioLebelSize = bioLabel.sizeThatFits(frame.size)
-        nameLabel.frame = CGRect(x: 5,
-                                 y: 5 + profilePhotoImageView.bottom,
+        let bioLabelSize = bioLabel.sizeThatFits(frame.size)
+        bioLabel.frame = CGRect(x: 5,
+                                 y: 5 + nameLabel.bottom,
                                  width: width-10,
-                                 height: bioLebelSize.height).integral
+                                 height: bioLabelSize.height).integral
         
                 
     }

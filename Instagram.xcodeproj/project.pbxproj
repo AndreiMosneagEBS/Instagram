@@ -20,6 +20,8 @@
 		8E9143A9284F718600BAD550 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9143A8284F718600BAD550 /* AuthManager.swift */; };
 		8E9143AB284F71E100BAD550 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9143AA284F71E100BAD550 /* StorageManager.swift */; };
 		8EA426CF2858744D00EA808F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EA426CE2858744D00EA808F /* GoogleService-Info.plist */; };
+		8EA426D12858A81400EA808F /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA426D02858A81400EA808F /* UserFollowTableViewCell.swift */; };
+		8EA426D32858D4B200EA808F /* NoNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA426D22858D4B200EA808F /* NoNotificationsView.swift */; };
 		8EACC3E4284F292B003AC625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACC3E3284F292B003AC625 /* AppDelegate.swift */; };
 		8EACC3E6284F292B003AC625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACC3E5284F292B003AC625 /* SceneDelegate.swift */; };
 		8EACC3E8284F292B003AC625 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACC3E7284F292B003AC625 /* HomeViewController.swift */; };
@@ -60,6 +62,8 @@
 		8E9143A8284F718600BAD550 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		8E9143AA284F71E100BAD550 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		8EA426CE2858744D00EA808F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8EA426D02858A81400EA808F /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		8EA426D22858D4B200EA808F /* NoNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsView.swift; sourceTree = "<group>"; };
 		8EACC3E0284F292B003AC625 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EACC3E3284F292B003AC625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EACC3E5284F292B003AC625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,9 +114,10 @@
 		8E63D2FB28521B05004402CD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8E63D30028521D61004402CD /* Home */,
 				8E67EA02285363BC00F9E31A /* FormTableViewCell.swift */,
 				8E67EA05285381C600F9E31A /* PhotoCollectionViewCell.swift */,
-				8E63D30028521D61004402CD /* Home */,
+				8EA426D02858A81400EA808F /* UserFollowTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				8E63D2FB28521B05004402CD /* Cells */,
 				8EACC3EC284F292D003AC625 /* Assets.xcassets */,
 				8EACC3FB284F2A89003AC625 /* Storyboard */,
+				8EA426D22858D4B200EA808F /* NoNotificationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -395,9 +401,11 @@
 				8EACC429284F313E003AC625 /* EditProfileViewController.swift in Sources */,
 				8E9143A7284F700500BAD550 /* DataBase.swift in Sources */,
 				8EACC435284F3221003AC625 /* PublishPostViewController.swift in Sources */,
+				8EA426D32858D4B200EA808F /* NoNotificationsView.swift in Sources */,
 				8E63D2FF28521D59004402CD /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				8E63D30428521DDD004402CD /* IGFeedGeneralTableViewCell.swift in Sources */,
 				8E67EA0B285382BF00F9E31A /* ProfileITabsCollectionReusableView.swift in Sources */,
+				8EA426D12858A81400EA808F /* UserFollowTableViewCell.swift in Sources */,
 				8EE8A65128573DBA00E90B7C /* Models.swift in Sources */,
 				8EACC43D284F3279003AC625 /* ProfileViewController.swift in Sources */,
 				8E67EA03285363BC00F9E31A /* FormTableViewCell.swift in Sources */,
