@@ -80,8 +80,9 @@ extension ListViewController: UserFollowTableViewCellDelegate{
             // perform firebase update to unfollow
             break
         case .not_following:
-            // perform firebase update to follow
             break
+            // perform firebase update to follow
+            
         }
     }
     

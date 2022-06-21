@@ -22,6 +22,8 @@
 		8EA426CF2858744D00EA808F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EA426CE2858744D00EA808F /* GoogleService-Info.plist */; };
 		8EA426D12858A81400EA808F /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA426D02858A81400EA808F /* UserFollowTableViewCell.swift */; };
 		8EA426D32858D4B200EA808F /* NoNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA426D22858D4B200EA808F /* NoNotificationsView.swift */; };
+		8EA426D62859BDD800EA808F /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA426D52859BDD800EA808F /* NotificationFollowEventTableViewCell.swift */; };
+		8EA426D82859BE1300EA808F /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA426D72859BE1300EA808F /* NotificationLikeEventTableViewCell.swift */; };
 		8EACC3E4284F292B003AC625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACC3E3284F292B003AC625 /* AppDelegate.swift */; };
 		8EACC3E6284F292B003AC625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACC3E5284F292B003AC625 /* SceneDelegate.swift */; };
 		8EACC3E8284F292B003AC625 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACC3E7284F292B003AC625 /* HomeViewController.swift */; };
@@ -64,6 +66,8 @@
 		8EA426CE2858744D00EA808F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8EA426D02858A81400EA808F /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
 		8EA426D22858D4B200EA808F /* NoNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsView.swift; sourceTree = "<group>"; };
+		8EA426D52859BDD800EA808F /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
+		8EA426D72859BE1300EA808F /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
 		8EACC3E0284F292B003AC625 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EACC3E3284F292B003AC625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EACC3E5284F292B003AC625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +118,8 @@
 		8E63D2FB28521B05004402CD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				8E63D30028521D61004402CD /* Home */,
+				8EA426D42859BD9300EA808F /* Notification */,
+				8E63D30028521D61004402CD /* Home Feed & Post */,
 				8E67EA02285363BC00F9E31A /* FormTableViewCell.swift */,
 				8E67EA05285381C600F9E31A /* PhotoCollectionViewCell.swift */,
 				8EA426D02858A81400EA808F /* UserFollowTableViewCell.swift */,
@@ -122,7 +127,7 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		8E63D30028521D61004402CD /* Home */ = {
+		8E63D30028521D61004402CD /* Home Feed & Post */ = {
 			isa = PBXGroup;
 			children = (
 				8E63D2FC28521B30004402CD /* IGFeedPostTableViewCell.swift */,
@@ -130,7 +135,7 @@
 				8E63D30128521DAC004402CD /* IGFeedPostActionTableViewCell.swift */,
 				8E63D30328521DDD004402CD /* IGFeedGeneralTableViewCell.swift */,
 			);
-			path = Home;
+			path = "Home Feed & Post";
 			sourceTree = "<group>";
 		};
 		8E67EA042853814E00F9E31A /* CollectionView Headers */ = {
@@ -155,6 +160,15 @@
 				8EACC434284F3221003AC625 /* PublishPostViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		8EA426D42859BD9300EA808F /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				8EA426D52859BDD800EA808F /* NotificationFollowEventTableViewCell.swift */,
+				8EA426D72859BE1300EA808F /* NotificationLikeEventTableViewCell.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		8EACC3D7284F292B003AC625 = {
@@ -403,6 +417,7 @@
 				8EACC435284F3221003AC625 /* PublishPostViewController.swift in Sources */,
 				8EA426D32858D4B200EA808F /* NoNotificationsView.swift in Sources */,
 				8E63D2FF28521D59004402CD /* IGFeedPostHeaderTableViewCell.swift in Sources */,
+				8EA426D62859BDD800EA808F /* NotificationFollowEventTableViewCell.swift in Sources */,
 				8E63D30428521DDD004402CD /* IGFeedGeneralTableViewCell.swift in Sources */,
 				8E67EA0B285382BF00F9E31A /* ProfileITabsCollectionReusableView.swift in Sources */,
 				8EA426D12858A81400EA808F /* UserFollowTableViewCell.swift in Sources */,
@@ -418,6 +433,7 @@
 				8E63D2FD28521B30004402CD /* IGFeedPostTableViewCell.swift in Sources */,
 				8EACC42B284F3159003AC625 /* SettingsViewController.swift in Sources */,
 				8EACC423284F30F6003AC625 /* LoginViewController.swift in Sources */,
+				8EA426D82859BE1300EA808F /* NotificationLikeEventTableViewCell.swift in Sources */,
 				8EC17A16284F7A090049E6D1 /* Extention.swift in Sources */,
 				8E67EA082853824A00F9E31A /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				8EACC425284F3107003AC625 /* RegisterViewController.swift in Sources */,
